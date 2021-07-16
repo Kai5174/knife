@@ -3,13 +3,13 @@ package Deprecated;
 import java.awt.Component;
 import java.util.List;
 
+import api.Getter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import burp.BurpExtender;
-import burp.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IExtensionHelpers;
 import burp.IMessageEditorController;

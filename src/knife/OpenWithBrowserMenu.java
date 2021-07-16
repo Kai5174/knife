@@ -9,7 +9,7 @@ import java.net.URL;
 import javax.swing.JMenuItem;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.HttpMessageCharSet;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;

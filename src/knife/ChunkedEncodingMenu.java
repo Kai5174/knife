@@ -10,7 +10,7 @@ import java.util.List;
 import javax.swing.JMenuItem;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;
 import burp.IExtensionHelpers;

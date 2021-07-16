@@ -15,7 +15,7 @@ import javax.swing.JMenuItem;
 import org.apache.commons.io.FileUtils;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;
 import burp.IExtensionHelpers;

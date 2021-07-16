@@ -70,12 +70,6 @@
 			<version>1.7.22</version>
 		</dependency>
 
-		<!-- https://github.com/bit4woo/burp-api-common -->
-		<dependency>
-			<groupId>com.github.bit4woo</groupId>
-			<artifactId>burp-api-common</artifactId>
-			<version>v0.1.0</version>
-		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec <dependency> 
 			<groupId>commons-codec</groupId> <artifactId>commons-codec</artifactId> <version>1.11</version> 

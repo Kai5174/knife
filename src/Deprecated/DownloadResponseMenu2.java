@@ -12,10 +12,10 @@ import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JMenuItem;
 
+import api.Getter;
 import org.apache.commons.io.FileUtils;
 
 import burp.BurpExtender;
-import burp.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;
 import burp.IExtensionHelpers;

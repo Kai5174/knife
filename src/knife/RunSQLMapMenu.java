@@ -13,7 +13,7 @@ import javax.swing.JMenuItem;
 import org.apache.commons.io.FileUtils;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;
 import burp.IExtensionHelpers;
@@ -31,7 +31,7 @@ public class RunSQLMapMenu extends JMenuItem {
 
 	//JMenuItem vs. JMenu
 	public RunSQLMapMenu(BurpExtender burp){
-		this.setText("^_^ Run SQLMap");
+		this.setText("Run SQLMap");
 		this.addActionListener(new RunSQLMap_Action(burp,burp.invocation));
 	}
 }

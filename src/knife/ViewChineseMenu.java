@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import javax.swing.JMenuItem;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;
 import burp.IExtensionHelpers;

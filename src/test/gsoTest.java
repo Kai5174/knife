@@ -10,7 +10,7 @@ import java.util.Base64;
 //import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.text.StringEscapeUtils;
 
-import burp.Getter;
+import api.Getter;
 
 public class gsoTest {
 	public static void main(String args[]) {

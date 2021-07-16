@@ -1,5 +1,6 @@
 package knife;
 
+import api.Getter;
 import burp.*;
 
 import javax.swing.*;

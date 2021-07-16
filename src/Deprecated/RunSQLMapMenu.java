@@ -13,10 +13,10 @@ import java.util.Date;
 
 import javax.swing.JMenuItem;
 
+import api.Getter;
 import org.apache.commons.io.FileUtils;
 
 import burp.BurpExtender;
-import burp.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IContextMenuInvocation;
 import burp.IExtensionHelpers;

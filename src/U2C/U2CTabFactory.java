@@ -13,7 +13,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.IBurpExtenderCallbacks;
 import burp.IExtensionHelpers;
 import burp.IMessageEditorController;

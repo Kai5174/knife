@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
+import api.Getter;
 import com.google.gson.Gson;
 
 import U2C.U2CTabFactory;
@@ -106,62 +107,26 @@ public class BurpExtender extends GUI implements IBurpExtender, IContextMenuFact
 		ArrayList<JMenuItem> menu_item_list = new ArrayList<JMenuItem>();
 
 		this.invocation = invocation;
-		//常用
-		menu_item_list.add(new OpenWithBrowserMenu(this));
-		menu_item_list.add(new Custom_Payload_Menu(this));
-		menu_item_list.add(new InsertXSSMenu(this));
-
-		//cookie身份凭证相关
-		menu_item_list.add(new UpdateCookieMenu(this));
-		menu_item_list.add(new UpdateCookieWithHistoryMenu(this));
-
-		menu_item_list.add(new SetCookieMenu(this));
-		menu_item_list.add(new SetCookieWithHistoryMenu(this));
-
-		UpdateHeaderMenu updateHeader = new UpdateHeaderMenu(this);//JMenuItem vs. JMenu
-		if (updateHeader.getItemCount()>0) {
-			menu_item_list.add(updateHeader);
-		}
-
-		//扫描攻击相关
-		menu_item_list.add(new AddHostToScopeMenu(this));
 		menu_item_list.add(new RunSQLMapMenu(this));
-		menu_item_list.add(new DoActiveScanMenu(this));
-		menu_item_list.add(new DoPortScanMenu(this));
+		return menu_item_list;
 
-
-		//不太常用的
-		menu_item_list.add(new DismissHostMenu(this));
-		menu_item_list.add(new DismissURLMenu(this));
-		menu_item_list.add(new DismissCancelMenu(this));
-
-		menu_item_list.add(new ChunkedEncodingMenu(this));
-		menu_item_list.add(new DownloadResponseMenu(this));
-		//menu_item_list.add(new DownloadResponseMenu2(this));
-		menu_item_list.add(new ViewChineseMenu(this));
 		//menu_item_list.add(new JMenuItem());
 		//空的JMenuItem不会显示，所以将是否添加Item的逻辑都方法到类当中去了，以便调整菜单顺序。
-		
-		Iterator<JMenuItem> it = menu_item_list.iterator();
-		while (it.hasNext()) {
-			JMenuItem item = it.next();
-			if (item.getText()==null || item.getText().equals("")) {
-				it.remove();
-			}
-		}
 
-		String oneMenu  = this.tableModel.getConfigValueByKey("Put_MenuItems_In_One_Menu");
-		if (oneMenu != null) {
-			ArrayList<JMenuItem> Knife = new ArrayList<JMenuItem>();
-			JMenu knifeMenu = new JMenu("^_^ Knife");
-			Knife.add(knifeMenu);
-			for (JMenuItem item : menu_item_list) {
-				knifeMenu.add(item);
-			}
-			return Knife;
-		}else {
-			return menu_item_list;
-		}
+//		menu_item_list.removeIf(item -> item.getText() == null || item.getText().equals(""));
+//
+//		String oneMenu  = tableModel.getConfigValueByKey("Put_MenuItems_In_One_Menu");
+//		if (oneMenu != null) {
+//			ArrayList<JMenuItem> Knife = new ArrayList<JMenuItem>();
+//			JMenu knifeMenu = new JMenu("^_^ Knife");
+//			Knife.add(knifeMenu);
+//			for (JMenuItem item : menu_item_list) {
+//				knifeMenu.add(item);
+//			}
+//			return Knife;
+//		}else {
+//			return menu_item_list;
+//		}
 	}
 
 

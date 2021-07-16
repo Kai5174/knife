@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 
 import burp.BurpExtender;
-import burp.Getter;
+import api.Getter;
 import burp.IHttpRequestResponse;
 import burp.Methods;
 
