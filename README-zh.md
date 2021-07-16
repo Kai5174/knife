@@ -1,5 +1,8 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)  [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
+### 魔改版
+因为自己只希望使用sqlmap的功能，所以魔改了一下。感谢开源！魔改版只保留了Run SQLMap功能。
+
 ### [knife](https://github.com/bit4woo/knife)插件详细使用手册
 
 插件的主要的目的是对burp做一些小的改进，更加方便使用。就像用一把**小刀**对其进行小小的雕刻。
